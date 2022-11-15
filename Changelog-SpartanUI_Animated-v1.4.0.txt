@@ -1,0 +1,11 @@
+tag v1.4.0
+396c766ad465e5f6f90d35356000c573d9a8a632
+Dan Sverin <dan.sverin@gmail.com>
+2016-07-28 12:00:16 +0200
+
+Tagging as v1.4.0
+
+
+--------------------
+
+No changelog
