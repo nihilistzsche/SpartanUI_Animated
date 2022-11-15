@@ -1,4 +1,4 @@
-## Interface: 100000
+## Interface: 30400
 ## Title: SpartanUI: |CFF0070DDAnimated Texture|r
 ## Version: 1.5.0
 ## Author: Haghala - EU-Shadowsong, Nihilistzsche
