@@ -383,17 +383,17 @@ end
 
 function addon:Refresh()
 	s_table = {
-		["player"] = SUI.UF.Unit.player, --work around sins we can't have "player" appear twice in a table.
+		[UnitName("player")] = SUI.UF.Unit.player, --work around sins we can't have "player" appear twice in a table.
 		["target"] = SUI.UF.Unit.target,
 		["pet"] = SUI.UF.Unit.pet,
 		["focus"] = SUI.UF.Unit.focus,
 		["focustarget"] = SUI.UF.Unit.focustarget,
 		["targettarget"] = SUI.UF.Unit.targettarget,
-		["party1"] = SUI.UF.Unit.party.frames[1],
-		["party2"] = SUI.UF.Unit.party.frames[2],
-		["party3"] = SUI.UF.Unit.party.frames[3],
-		["party4"] = SUI.UF.Unit.party.frames[4],
-		["party5"] = SUI.UF.Unit.party.frames[5],
+		["player"] = SUI.UF.Unit.party.frames[1],
+		["party1"] = SUI.UF.Unit.party.frames[2],
+		["party2"] = SUI.UF.Unit.party.frames[3],
+		["party3"] = SUI.UF.Unit.party.frames[4],
+		["party4"] = SUI.UF.Unit.party.frames[5],
 		["boss1"] = SUI.UF.Unit.boss.frames[1],
 		["boss2"] = SUI.UF.Unit.boss.frames[2],
 		["boss3"] = SUI.UF.Unit.boss.frames[3],
@@ -404,16 +404,16 @@ function addon:Refresh()
 		["boss8"] = SUI.UF.Unit.boss.frames[8],
 	}
 	s_table_party_target = {
-		["partytarget1"] = SUI.UF.Unit.partytarget.frames[1],
-		["partypet1"] = SUI.UF.Unit.partypet.frames[1],
-		["partytarget2"] = SUI.UF.Unit.partytarget.frames[2],
-		["partypet2"] = SUI.UF.Unit.partypet.frames[2],
-		["partytarget3"] = SUI.UF.Unit.partytarget.frames[3],
-		["partypet3"] = SUI.UF.Unit.partypet.frames[3],
-		["partytarget4"] = SUI.UF.Unit.partytarget.frames[4],
-		["partypet4"] = SUI.UF.Unit.partypet.frames[4],
-		["partytarget5"] = SUI.UF.Unit.partytarget[5],
-		["partypet5"] = SUI.UF.Unit.partypet[5],
+		["player"] = SUI.UF.Unit.partytarget.frames[1],
+		["pet"] = SUI.UF.Unit.partypet.frames[1],
+		["party1target"] = SUI.UF.Unit.partytarget.frames[2],
+		["partypet1"] = SUI.UF.Unit.partypet.frames[2],
+		["party2target"] = SUI.UF.Unit.partytarget.frames[3],
+		["partypet2"] = SUI.UF.Unit.partypet.frames[3],
+		["party3target"] = SUI.UF.Unit.partytarget.frames[4],
+		["partypet3"] = SUI.UF.Unit.partypet.frames[4],
+		["party4target"] = SUI.UF.Unit.partytarget[5],
+		["partypet4"] = SUI.UF.Unit.partypet[5],
 	}
 	if InCombatLockdown() then --Possible fix for incombat partyframe creation.
 		C_Timer.After(10, addon.Refresh)
