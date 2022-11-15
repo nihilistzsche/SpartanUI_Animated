@@ -297,7 +297,7 @@ function addon:OnEnable()
 		f:SetScript("OnHide", function()
 			addon.Ticker:Cancel()
 		end)
-		local partyFrames = UF.Unit.party
+		local partyframes = UF.Unit.party
 		partyframes.RealUpdate = partyframes.UpdateAll
 		partyframes.UpdateAll = addon.PartyInjection
 	else
